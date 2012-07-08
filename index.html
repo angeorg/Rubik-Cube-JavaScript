@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="bg" xml:lang="bg" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Rubik's Cube</title>
+	<meta content="text/html; charset=windows-1251" http-equiv="Content-Type" />
+	<script type="text/javascript" src="cube.js"></script>
+	<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="sides">
+	<div class="w" onclick="cube.spin(0)">&uarr; Up</div>
+	<div class="left lr w" onclick="cube.spin(1)">&larr; Left</div>
+	
+	<div class="left">
+		<canvas id="canvas" width="100" height="100"></canvas>
+	</div>
+	
+	<div class="left lr w" onclick="cube.spin(2)">Right &rarr;</div>
+	<div class="w l" onclick="cube.spin(3)">Down &darr;</div>
+</div>
+<script type="text/javascript">
+cube.start();
+</script>
+</body>
+</html>
